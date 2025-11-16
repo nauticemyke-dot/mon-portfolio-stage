@@ -1,0 +1,161 @@
+/* ======================================= */
+/* 2. PALETTE DE COULEURS ET POLICES (Corps) */
+/* ======================================= */
+
+:root {
+    /* Couleurs */
+    --couleur-primaire: #007bff; /* Bleu: pour la navigation, les boutons */
+    --couleur-secondaire: #28a745; /* Vert: pour les accents, les liens au survol */
+    --couleur-fond: #f8f9fa; /* Gris très clair: pour le fond du site */
+    --couleur-texte: #343a40; /* Gris foncé: pour le texte principal */
+
+    /* Police */
+    /* Utilisez une police lisible et professionnelle, comme Roboto ou Arial */
+    --police-principale: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--police-principale);
+    margin: 0;
+    padding: 0;
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+    line-height: 1.6; /* Améliore la lisibilité du texte */
+}
+
+/* ======================================= */
+/* 3. SÉLECTEURS - HEADER et NAVIGATION */
+/* ======================================= */
+
+header {
+    background-color: var(--couleur-primaire);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Petite ombre pour l'effet de profondeur */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex; 
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+/* Liens de Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol sur les liens */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fond semi-transparent au survol */
+    border-radius: 5px;
+}
+
+/* ======================================= */
+/* SÉLECTEURS - CONTENU PRINCIPAL */
+/* ======================================= */
+
+main {
+    padding: 40px 20px 70px; /* Ajout d'un padding en bas pour le footer fixe */
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dee2e6; /* Ligne de séparation entre les sections */
+}
+
+/* Titres */
+h2, h3 {
+    color: var(--couleur-primaire);
+    border-bottom: 2px solid var(--couleur-secondaire);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* ======================================= */
+/* SÉLECTEURS - PHOTO DE PROFIL (pour index.html) */
+/* ======================================= */
+
+#photo-profil {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; /* Rend la photo ronde */
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block; /* Centre l'image */
+    border: 5px solid var(--couleur-secondaire);
+}
+
+/* ======================================= */
+/* SÉLECTEURS - FORMULAIRE (pour contact.html) */
+/* ======================================= */
+
+#formulaire-contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#formulaire-contact input[type="text"], 
+#formulaire-contact input[type="email"], 
+#formulaire-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+#formulaire-contact button {
+    background-color: var(--couleur-secondaire);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#formulaire-contact button:hover {
+    background-color: #1e7e34; /* Vert plus foncé au survol */
+}
+
+/* ======================================= */
+/* SÉLECTEURS - FOOTER */
+/* ======================================= */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--couleur-texte);
+    color: white;
+    position: fixed; /* Maintient le pied de page en bas de la fenêtre */
+    bottom: 0;
+    width: 100%;
+}
